@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Av2 - LabBD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+                     
+        <div class="fullscreen background" style="background-image:url('http://deborahrodriguez.net/wp-content/uploads/2014/10/pistaatletismofondo2.jpg');" data-img-width="1600" data-img-height="1064">
+            <div class="content-a">
+                <div class="content-b">
+                    <br><br><br>
+        
+        <div class="container">
+        	<div class="row row-centered">
+        		<div class="col-centered">
+        		</div>
+        	</div>
+        </div>
+        
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-centered">
+                    <button class="btn btn-success" onclick="aumentaHR()">
+                    	<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-success" onclick="aumentaMIN()">
+                    	<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-success" onclick="aumentaSEG()">
+                    	<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-success" onclick="aumentaD()">
+                    	<span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-centered">
+                    <h1 id="hora">00</h1>
+			        <h1>:</h1>
+			        <h1 id="minuto">00</h1>
+			        <h1>:</h1>
+			        <h1 id="segundo">00</h1>
+			        <h1>.</h1>
+			        <h1 id="decimo">000</h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-centered">
+                    <button class="btn btn-danger" onclick="diminuiHR()">
+                    	<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger" onclick="diminuiMIN()">
+                    	<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger" onclick="diminuiSEG()">
+                    	<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-danger" onclick="diminuiD()">
+                    	<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+            <div class="container">
+            	<div class="row row-centered">
+                	<div class="col-centered"> 
+                        	<button id="btnDefine" class="btn btn-lg">Definir Tempo</button>
+                        	<button class="btn btn-lg">Aleatório</button>
+                    </div>
+                </div>
+            </div>
+        <br><br>
+        
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-centered">        
+                <button type="button" class="btn btn-primary btn-lg round" data-toggle="modal" data-target="#modal-fullscreen">
+                    Ver resultados
+                </button>
+
+                <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Resultados das Baterias</h4>
+                            </div>
+                            <div class="modal-body">
+								<table class="table table-hover table-bordered">
+									<thead>
+										<tr>
+											<th>#Num.</th>
+											<th>Nome</th>
+											<th>País</th>
+											<th>Resultado</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>William Della Ripa Souto</td>
+											<td>Brasil</td>
+											<td>00:00:08.333</td>
+										</tr>
+									</tbody>
+								</table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div id="divFundo"></div>
+        </div>
+        </div>        
+        </div>       
+                            
+        <!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/funcoes.js"></script>
+    </body>
+</html>

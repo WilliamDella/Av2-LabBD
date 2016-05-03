@@ -1,0 +1,39 @@
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+h1 {
+    font-size: 700%;
+    color: #3498db;
+    text-shadow: 2px 2px #34495e;
+}
+
+.btn-lg.round {
+	border-radius: 24px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #f1c40f !important;
+    color: black;
+}
+
+h1 {
+	display: inline;
+}
+
+#btnDefine {
+	display: inline;
+}
+
+#divFundo {
+	height: 500px
+}
